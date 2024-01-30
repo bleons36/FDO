@@ -67,7 +67,7 @@ resource "aws_instance" "tfe_dev_instance" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.large"
   subnet_id     = aws_subnet.tfe_dev_instance.id
-  key_name      = "hw-key"
+  key_name      = "suleeKey"
 
   security_groups = [aws_security_group.tfe_dev_instance.id]
 
